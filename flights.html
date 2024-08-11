@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Taniti Island | Book a Flight</title>
+    <link rel="stylesheet" href="main.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="Taniti Island, Entertainment, Attraction">
+</head>
+<body>
+<div class="header">
+    <img src="images/beach_scene.jpg" alt="Taniti Island" height="500px" width="1317px"/>
+    <br/>
+
+</div>
+<div class="topnav">
+    <ul>
+        <li><a href="home.html">HOME</a></li>
+        <li class="subnav">
+            <a href="thingstodo.html" class="dropdown">THINGS TO DO</a>
+            <div class="dropdown-menu">
+                <a href="entertainment.html">Entertainment</a>
+                <a href="restaurants.html">Restaurants</a>
+                <a href="attractions.html">Attractions</a>
+            </div>
+        </li>
+        <li class="subnav">
+            <a href="planatrip.html" class="dropdown">PLAN A TRIP</a>
+            <div class="dropdown-menu">
+                <a href="flights.html">Book a Flight</a>
+                <a href="lodging.html">Make A Reservation</a>
+                <a href="transportation.html">Rent a Vehicle</a>
+            </div>
+        </li>
+        <li ><a href="contactus.html">CONTACT US</a></li>
+
+        <form class="submit">
+            <input type="submit" value="Search" id="search">&nbsp <input type="search" placeholder="Search..." id="psearch" name="psearch">
+        </form>
+    </ul>
+</div>
+<h2>Book a Flight</h2>
+<h4>All fields are required</h4>
+<br/>
+<form>
+    <fieldset class="container">
+        <legend class="legend"><b>Contact Information</b></legend>
+            <label for="fname"><b>First Name:</b></label>
+                <input type="text" id="fname" name="fname" class="fields"  required>
+            <label for="lname"><b>Last Name:</b></label>
+                <input type="text" id="lname" name="lname" class="fields" required>
+                    <br/>
+                    <br/>
+            <label for="address"><b>Address:</b></label>
+                <input type="text" id="address" name="address" class="fields" required>
+                    <br/>
+                    <br/>
+            <label for="city"><b>City:</b></label>
+                <input type="text" id="city" name="city" class="fields" required>
+        <label for="state"><b>State</b></label>
+            <select id="state" name="state" class="fields">
+                <option value=""></option>
+                <option value="AL">AL</option><option value="HI">HI</option><option value="MA">MA</option><option value="NM">NM</option><option value="SD">SD</option>
+                <option value="AK">AK</option><option value="ID">ID</option><option value="MI">MI</option><option value="NY">NY</option><option value="TN">TN</option>
+                <option value="AZ">AZ</option><option value="IL">IL</option><option value="MN">MN</option><option value="NC">NC</option><option value="TX">TX</option>
+                <option value="AR">AR</option><option value="IN">IN</option><option value="MS">MS</option><option value="ND">ND</option><option value="UT">UT</option>
+                <option value="CA">CA</option><option value="IA">IA</option><option value="MO">MO</option><option value="OH">OH</option><option value="VT">VT</option>
+                <option value="CO">CO</option><option value="KS">KS</option><option value="MT">MT</option><option value="OK">OK</option><option value="VI">VI</option>
+                <option value="CT">CT</option><option value="KY">KY</option><option value="NE">NE</option><option value="OR">OR</option><option value="WA">WA</option>
+                <option value="DE">DE</option><option value="LA">LA</option><option value="NV">NV</option><option value="PA">PA</option><option value="WV">WV</option>
+                <option value="FL">FL</option><option value="ME">ME</option><option value="NH">NH</option><option value="RI">RI</option><option value="WI">WI</option>
+                <option value="GA">GA</option><option value="MD">MD</option><option value="NJ">NJ</option><option value="SC">SC</option><option value="WY">WY</option>
+            </select>
+        <label for="zip"><b>Zip Code:</b></label>
+            <input type="number" id="zip" name="zip" class="fields" required>
+                <br/>
+                <br/>
+            <label for="phone"><b>Phone Number:</b></label>
+                <input type="tel" id="phone" name="tel" class="fields" placeholder="555-555-5555" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required>
+            <label for="email"><b>Email:</b></label>
+                <input type="email" id="email" name="email" class="fields" required>
+                    <br/>
+                    <br/>
+    </fieldset>
+    <fieldset class="container">
+        <legend class="legend"><b>Flight Information</b></legend>
+            <label for="airline"><b>Airline:</b></label>
+                <select id="airline" name="airline" class="fields">
+                    <option value=""></option>
+                    <option value="American">American</option>
+                    <option value="Southwest">Southwest</option>
+                    <option value="Delta">Delta</option>
+                </select>
+            <label for="seats"><b>How Many Seats:</b></label>
+                <select id="seats" name="seats" class="fields">
+                    <option value=""></option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                </select>
+    </fieldset>
+    <input type="reset" value="Clear" class="button"> <input type="submit" value="Submit" class="button">
+    <hr>
+    <p>If you don't see the airline that you would like to travel on, you can book your flight at:
+        <br/>
+        <a href=http://www.booking.com" target="_blank">Booking.com</a>
+        <br/>
+        <a href="http://www.kayak.com" target="_blank">Kayak</a>
+
+    </p>
+</form>
+<div class="footer">
+    <div class="row3">
+        <div class="column2 side">
+            <br/>
+        </div>
+        <div class="column2 middle">
+            <br/>
+            HOME | <a href="thingstodo.html">THINGS TO DO</a> | <a href="planatrip.html">PLAN A TRIP</a>  |
+            <a href="contactus.html">CONTACT US</a>
+            <br/>
+        </div>
+        <div class="column2 side">
+            <br/>
+            Taniti Island<br/>
+            &copy; Copyright 2024
+            <br/>
+            <br/>
+        </div>
+    </div>
+</div>
+</body>
+</html>
